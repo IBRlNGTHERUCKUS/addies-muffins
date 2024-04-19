@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Nickainley;
+    src: url("./fonts/Nickainley-Normal.otf");
+}
+
+* {
+    font-family: Nickainley;
+}
+
+body {
+    background: rgb(255,169,249);
+    background: linear-gradient(180deg, rgba(255,169,249,1) 0%, rgba(255,247,173,1) 100%);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    color: white;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 72px;
+    width:fit-content;
+    text-align: center;
+}
+
+.logo {
+    height: 150px
+}
+
+.text-shadow {
+    text-shadow: 
+    #FF60A0 2px 2px 5px,
+    #FF89CE 2px 2px 5px
+    ;
+}
