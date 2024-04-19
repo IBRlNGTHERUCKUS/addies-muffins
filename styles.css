@@ -5,6 +5,7 @@
 
 * {
     font-family: Nickainley;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -81,7 +82,7 @@ nav a {
     box-shadow: rgb(201, 198, 198) 1px 1px 10px;
 }
 
-.jump-link:hover {
+nav a:hover {
     transform:scale(1.2);
 }
 
@@ -127,6 +128,9 @@ nav a {
 .carousel-slide {
     box-sizing: border-box;
     flex: 0 0 100%;
+    
+}
+.menu-container, .featured-container {
     padding: 25px;
 }
 
@@ -134,13 +138,10 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    border: solid red 2px;
 }
 
 .menu-container h1 {
     grid-column: 1/3;
-    color: white;
-    text-shadow: rgb(114, 108, 108) 1px 1px 10px;;
 }
 
 .menu-item {
@@ -162,4 +163,22 @@ nav a {
 .menu-item-image {
     width: 100%;
     border-radius: 18px;
+}
+
+.featured-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.white-with-shadow {
+    color: white;
+    text-shadow: rgb(114, 108, 108) 1px 1px 10px;
+}
+
+.anchor {
+    position: relative;
+    top: -70px;
+    visibility: hidden;
 }
