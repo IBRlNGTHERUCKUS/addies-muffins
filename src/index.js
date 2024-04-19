@@ -8,8 +8,8 @@ const menuLinkEl = document.querySelector("#menu-link");
 const aboutLinkEl = document.querySelector("#about-link");
 
 featuredLinkEl.addEventListener("click", () => {
-  carouselObj.jumpTo(1);
+  carouselObj.jumpTo(0);
 });
 menuLinkEl.addEventListener("click", () => {
-  carouselObj.jumpTo(0);
+  carouselObj.jumpTo(1);
 });
