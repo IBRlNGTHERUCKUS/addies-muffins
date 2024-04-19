@@ -15,6 +15,10 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3, p {
+    margin: 0px;
+}
+
 /************************* Header *************************/
 
 header {
@@ -69,6 +73,9 @@ a {
     background-color: white;
     border-radius: 18px;
     padding: 6px 12px;
+}
+
+.box-shadow {
     box-shadow: rgb(201, 198, 198) 1px 1px 10px;
 }
 
@@ -105,4 +112,42 @@ a {
 .sideways-text {
     writing-mode:vertical-rl;
     transform: rotate(180deg)
+}
+
+/************************* Carousel *************************/
+
+.carousel-slide {
+    padding: 25px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
+}
+
+.menu-container h1 {
+    grid-column: 1/3;
+    color: white;
+    text-shadow: rgb(114, 108, 108) 1px 1px 10px;;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-item-name, .menu-item-price {
+    text-align: center;
+}
+
+.menu-item-image {
+    width: 100%;
+    border-radius: 18px;
 }
