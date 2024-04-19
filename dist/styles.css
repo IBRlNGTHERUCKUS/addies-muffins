@@ -60,13 +60,16 @@ nav {
     border-top: white 2px solid;
     border-bottom: white 2px solid;
     padding: 10px;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(10px);
 }
 
 a {
     text-decoration: none;
 }
 
-.jump-link {
+nav a {
     font-size: 24px;
     color: black;
     background-color: white;
@@ -114,8 +117,16 @@ a {
 }
 
 /************************* Carousel *************************/
+.carousel-outer {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    max-width: 700px;
+    display:flex;
+}
 
 .carousel-slide {
+    box-sizing: border-box;
+    flex: 0 0 100%;
     padding: 25px;
 }
 
@@ -123,6 +134,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    border: solid red 2px;
 }
 
 .menu-container h1 {
