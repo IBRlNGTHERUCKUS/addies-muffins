@@ -3,6 +3,11 @@
     src: url("./fonts/Nickainley-Normal.otf");
 }
 
+@font-face {
+    font-family: MondayFeelings;
+    src: url("./fonts/MondayFeelings.ttf");
+}
+
 * {
     font-family: Nickainley;
     scroll-behavior: smooth;
@@ -73,14 +78,14 @@ a {
 
 nav a {
     font-size: 24px;
-    color: black;
-    background-color: white;
-    border-radius: 18px;
     padding: 6px 12px;
 }
 
-.box-shadow {
+.white-box {
+    background: white;
     box-shadow: rgb(201, 198, 198) 1px 1px 10px;
+    border-radius: 18px;
+    color: black
 }
 
 nav a:hover {
@@ -131,7 +136,7 @@ nav a:hover {
     flex: 0 0 100%;
     
 }
-.menu-container, .featured-container {
+.menu-container, .featured-container, .about-us-container {
     padding: 25px;
 }
 
@@ -141,19 +146,16 @@ nav a:hover {
     gap: 10px;
 }
 
-.menu-container {
-    grid-column: 1/3;
-}
-
 .section-title {
     display: flex;
     align-items: center;
+    grid-column: 1/3;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .menu-item {
-    background-color: white;
     padding: 10px;
-    border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -166,7 +168,7 @@ nav a:hover {
     text-align: center;
 }
 
-.menu-item-image {
+.menu-item-image, .about-us-container img {
     width: 100%;
     border-radius: 18px;
 }
@@ -187,4 +189,34 @@ nav a:hover {
     position: relative;
     top: -70px;
     visibility: hidden;
+    grid-column: 1/1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font-size: 1.2rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg,                             rgba(255,255,255,1) 0%, rgba(195,195,195,1) 100%);
+
+}
+
+footer p {
+    text-indent: 2rem;
+        font-family: MondayFeelings;
+}
+
+footer img {
+    width: 100%;
+}
+
+.dedication {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    align-content: center;
+
 }
