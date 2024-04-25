@@ -1,15 +1,14 @@
 import { Carousel } from "carousel-test-95";
 
-const carouselEl = document.querySelector(".carousel-outer");
+const carouselEl = document.querySelector(".carousel-inner");
 const carouselObj = new Carousel(carouselEl);
 
-const featuredLinkEl = document.querySelector("#featured-link");
-const menuLinkEl = document.querySelector("#menu-link");
-const aboutLinkEl = document.querySelector("#about-link");
-
-featuredLinkEl.addEventListener("click", () => {
-  carouselObj.jumpTo(0);
+const previousBtn = document.querySelector("#carousel-previous");
+previousBtn.addEventListener("click", () => {
+  carouselObj.previous();
 });
-menuLinkEl.addEventListener("click", () => {
-  carouselObj.jumpTo(1);
+
+const nextBtn = document.querySelector("#carousel-next");
+nextBtn.addEventListener("click", () => {
+  carouselObj.next();
 });
