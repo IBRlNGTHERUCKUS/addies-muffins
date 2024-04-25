@@ -38,7 +38,6 @@ header {
     align-items: center;
     gap: 12px;
     padding: 10px;
-    color: white;
 }
 
 header * {
@@ -56,6 +55,10 @@ h1 {
     max-height: 150px;
     object-fit: contain;
     width: 100%;
+}
+
+.company-name {
+    color: white;
 }
 
 .text-shadow {
@@ -130,20 +133,55 @@ nav a:hover {
 }
 
 /************************* Carousel *************************/
+.gallery {
+    flex-direction: row;
+    padding: 20px;
+    gap: 10px;
+}
 .carousel-outer {
+    display: flex;
+    place-content: center;
+    position: relative;
+    max-width: 700px;
+    padding: 20px;
+    width: 80%;
+}
+.carousel-inner {
     scroll-behavior: smooth;
     overflow: hidden;
-    max-width: 700px;
     display:flex;
+    width: 100%;
+    position: relative;
 }
 
 .carousel-slide {
-    box-sizing: border-box;
     flex: 0 0 100%;
-    
+    box-sizing: content-box;
 }
+
+#carousel-next, #carousel-previous {
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+    width: 15%;
+    padding: 0px 25px;
+    z-index: 1;
+}
+#carousel-previous {
+    left: 0px;
+}
+#carousel-next {
+    right: 0px;
+}
+
+.carousel-slide img {
+    width: 100%;
+}
+
+/**************************************************/
+
 .menu-container, .featured-container, .about-us-container {
-    padding: 25px;
+    padding: 10px 25px;
 }
 
 .menu-container {
