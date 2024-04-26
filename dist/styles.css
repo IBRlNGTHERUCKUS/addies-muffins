@@ -316,6 +316,7 @@ footer h2 {
     background: rgb(255,169,249);
     background: linear-gradient(90deg, rgb(234, 189, 231) 0%, rgb(255, 255, 255) 100%);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
